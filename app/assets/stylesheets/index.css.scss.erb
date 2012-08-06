@@ -1,0 +1,47 @@
+// Place all the styles related to the index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+body {
+  margin:0px;
+  background-image:url(<%= asset_path 'classy_fabric.png' %>);
+}
+
+header {
+  font-family: 'Source Sans Pro', sans-serif;
+  color:white;
+}
+
+.content {
+  width:1450px;
+  margin:auto;
+}
+
+.titleArea {
+  width:100%;
+  height:35px; 
+  float:left;
+  margin-bottom:10px;
+}
+
+span.feedTitle {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size:1.1em;
+  float:left;
+  margin-left:5px;
+  margin-top:5px;
+  color:white;
+}
+
+.entries {
+  padding:10px;
+}
+
+.entry {
+  h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:0.8em;
+  }
+}
