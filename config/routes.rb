@@ -1,4 +1,9 @@
 FeedBoard::Application.routes.draw do  
+  get "feeds/index"
+  match "feeds" => "feeds#index"
+
+  resources :users
+
   root :to => 'index#index'
 
   # The priority is based upon order of creation:

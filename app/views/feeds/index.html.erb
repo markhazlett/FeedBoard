@@ -1,0 +1,80 @@
+  <div class="gridster ready">
+    <ul>
+      <li data-row="1" data-col="1" data-sizex="5" data-sizey="2" class="gs_w">
+        <div class="titleArea" style="background-color:#A27FD2;">
+          <span class="feedTitle"><%= @feed.title %></span>
+        </div>
+        <div class="entries">
+          <div class="entry">
+            <h3><%= @feed.entries.first.title %></h3> 
+          </div>
+          <div class="entry">
+            <h3><%= @feed.entries.second.title %></h3>
+          </div>
+          <div class="entry">
+            <h3><%= @feed.entries.third.title %></h3>
+          </div>          
+        </div>
+      </li>
+
+      <li data-row="1" data-col="2" data-sizex="5" data-sizey="2" class="gs_w">
+        <div class="titleArea" style="background-color:#24b0b1;">
+          <span class="feedTitle"><%= @feed2.title %></span>
+        </div>
+        <div class="entries">
+          <div class="entry">
+            <h3><%= @feed2.entries.first.title %></h3> 
+          </div>
+          <div class="entry">
+            <h3><%= @feed2.entries.second.title %></h3>
+          </div>
+          <div class="entry">
+            <h3><%= @feed2.entries.third.title %></h3>
+          </div>          
+        </div>
+      </li>
+
+      <li data-row="1" data-col="3" data-sizex="5" data-sizey="2" class="gs_w">
+        <div class="titleArea" style="background-color:#ea2e49;">
+          <span class="feedTitle"><%= @feed3.title %></span>
+        </div>
+        <div class="entries">
+          <div class="entry">
+            <h3><%= @feed3.entries.first.title %></h3> 
+          </div>
+          <div class="entry">
+            <h3><%= @feed3.entries.second.title %></h3>
+          </div>
+          <div class="entry">
+            <h3><%= @feed3.entries.third.title %></h3>
+          </div>          
+        </div>
+      </li>
+      <li data-row="2" data-col="1" data-sizex="5" data-sizey="2" class="gs_w player-revert" style="position: absolute; "></li>
+
+      <li class="try gs_w" data-row="2" data-col="2" data-sizex="5" data-sizey="2"></li>
+      <li data-row="2" data-col="3" data-sizex="5" data-sizey="2" class="gs_w"></li>
+    </ul>
+  </div>
+
+  <script type="text/javascript" src="/assets/jquery.js"></script>
+  <script src="/assets/jquery.gridster.min.js" type="text/javascript" charset="utf-8"></script>
+
+  <script type="text/javascript">
+  var gridster;
+
+  $(function(){
+
+    gridster = $(".gridster ul").gridster({
+        widget_margins: [10, 10],
+        widget_base_dimensions: [76, 76],
+        min_cols: 15,
+        min_rows: 20,
+        avoid_overlapped_widgets: true,
+        draggable: false
+    }).data('gridster');
+
+    gridster.disable();
+
+  });
+</script>
